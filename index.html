@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href=<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -27,7 +27,7 @@
       --shadow: 0 24px 70px rgba(42,15,83,.24);
     }
 
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; font-family: "Be Vietnam Pro", sans-serif; }
 
     html {
       scroll-behavior: smooth;
@@ -37,7 +37,7 @@
     body {
       margin: 0;
       color: var(--ink);
-      font-family: "", sans-serif;
+      font-family: "Be Vietnam Pro", sans-serif;
       background:
         radial-gradient(ellipse at 8% 18%, rgba(255,255,255,.10), transparent 24%),
         radial-gradient(ellipse at 90% 32%, rgba(194,160,255,.16), transparent 22%),
@@ -135,7 +135,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      font-family: "Cinzel", serif;
+      font-family: "Be Vietnam Pro", sans-serif;
       font-size: 12px;
       font-weight: 700;
       letter-spacing: .18em;
@@ -236,9 +236,9 @@
     h1 {
       font-family: "Playfair Display", Georgia, serif;
       font-size: clamp(58px, 7.2vw, 100px);
-      font-weight: 600;
-      line-height: .99;
-      letter-spacing: -.055em;
+      font-weight: 400;
+      line-height: 1.04;
+      letter-spacing: -.045em;
       margin: 27px 0 24px;
       max-width: 660px;
       text-wrap: balance;
@@ -249,9 +249,10 @@
 
     h1 .dream {
       font-family: "Playfair Display", Georgia, serif;
-      font-weight: 700;
-      font-size: .72em;
-      letter-spacing: -.065em;
+      font-weight: 400;
+      font-style: italic;
+      font-size: .78em;
+      letter-spacing: -.045em;
       color: #fff0a0;
       -webkit-text-stroke: .5px rgba(255,255,255,.45);
       text-shadow: 0 3px 0 rgba(70,33,118,.52),
@@ -452,7 +453,7 @@
     .floating-note span {
       display: block;
       margin-top: 7px;
-      font-family: "Comfortaa", sans-serif;
+      font-family: "Be Vietnam Pro", sans-serif;
       font-size: 10px;
       font-style: normal;
       letter-spacing: .1em;
@@ -482,7 +483,7 @@
     }
 
     h2 {
-      font-family: "Cinzel", "Playfair Display", Georgia, serif;
+      font-family: "Playfair Display", Georgia, serif;
       font-weight: 600;
       font-size: clamp(30px, 4.2vw, 50px);
       line-height: 1.1;
@@ -578,7 +579,7 @@
       border: 1px solid rgba(255,255,255,.32);
       background: rgba(255,255,255,.12);
       box-shadow: var(--shadow);
-      aspect-ratio: 4 / 5;
+      aspect-ratio: 16 / 9;
       isolation: isolate;
     }
 
@@ -808,9 +809,9 @@
     }
     .letter-paper p {
       color: #5d4776;
-      font-size: 14px;
+      font-size: clamp(17px, 2.2vw, 19px);
       line-height: 1.95;
-      margin: 0 0 15px;
+      margin: 0 0 20px;
     }
     .letter-signature {
       margin-top: 25px;
@@ -818,6 +819,26 @@
       font-family: "Playfair Display", serif;
       font-style: italic;
       font-size: 20px;
+    }
+    .letter-audio {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 8px 10px;
+      margin: 0 0 24px;
+      padding: 13px 15px;
+      border: 1px solid rgba(130, 86, 198, .22);
+      border-radius: 16px;
+      background: rgba(255,255,255,.58);
+      color: #8256c6;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .letter-audio > span:first-child { font-size: 21px; }
+    .letter-audio audio {
+      grid-column: 1 / -1;
+      width: 100%;
+      height: 38px;
     }
     body.modal-open { overflow: hidden; }
 
@@ -971,7 +992,7 @@
       }
 
       .gallery-item {
-        aspect-ratio: 4 / 3;
+        aspect-ratio: 16 / 9;
         border-radius: 22px;
       }
 
@@ -1258,13 +1279,14 @@
       <button class="letter-close" id="closeLetter" type="button" aria-label="Đóng lá thư">×</button>
       <span class="letter-label">The Behalism · Chạm giấc mơ em</span>
       <h2 id="letterTitle">Gửi những giấc mơ nhỏ bé</h2>
-      <p>
-        The Behalism là tổ chức phi lợi nhuận hoạt động tại Thành phố Hồ Chí Minh,
-        Hà Nội và Bến Tre. Với mong muốn mang lại niềm vui và tri thức cho trẻ em
-        tại các làng trẻ ở nhiều địa phương trên khắp Việt Nam, chúng mình tin rằng
-        mỗi sự sẻ chia đều có thể mở ra một cơ hội để các em khám phá thế giới và
-        tin hơn vào những ước mơ của mình.
-      </p>
+      <div class="letter-audio">
+        <span aria-hidden="true">♫</span>
+        <span>Giai điệu nhỏ dành riêng cho lá thư này</span>
+        <audio id="letterAudio" controls preload="none">
+          <source src="./audio-thu.mp3" type="audio/mpeg">
+          Trình duyệt của bạn không hỗ trợ phát âm thanh.
+        </audio>
+      </div>
       <p>
         “Chạm giấc mơ em” được thực hiện với mong muốn mang đến cho các em nhỏ tại
         Làng trẻ em SOS Bến Tre một ngày thật nhiều tiếng cười, những trải nghiệm
@@ -1315,11 +1337,17 @@
     const letterModal = document.getElementById("messageLetter");
     const openLetter = document.getElementById("openLetter");
     const closeLetter = document.getElementById("closeLetter");
+    const letterAudio = document.getElementById("letterAudio");
 
     function showLetter() {
       letterModal.classList.add("open");
       letterModal.setAttribute("aria-hidden", "false");
       document.body.classList.add("modal-open");
+      if (letterAudio) {
+        letterAudio.currentTime = 0;
+        const playback = letterAudio.play();
+        if (playback && typeof playback.catch === "function") playback.catch(() => {});
+      }
       closeLetter.focus();
     }
 
@@ -1327,6 +1355,7 @@
       letterModal.classList.remove("open");
       letterModal.setAttribute("aria-hidden", "true");
       document.body.classList.remove("modal-open");
+      if (letterAudio) letterAudio.pause();
       openLetter.focus();
     }
 
