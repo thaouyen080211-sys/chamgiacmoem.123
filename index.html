@@ -1,16 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#7650b7">
+  <meta name="theme-color" content="#4b286f">
   <meta name="description" content="Chạm giấc mơ em — mini session sẻ chia yêu thương cùng các em nhỏ tại Làng trẻ em SOS.">
   <title>Chạm giấc mơ em — Mini Session</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -40,10 +39,10 @@
       color: var(--ink);
       font-family: "DM Sans", sans-serif;
       background:
-        radial-gradient(ellipse at 8% 18%, rgba(255,255,255,.42), transparent 24%),
-        radial-gradient(ellipse at 90% 32%, rgba(255,239,255,.30), transparent 22%),
-        radial-gradient(ellipse at 50% 80%, rgba(194,160,255,.52), transparent 35%),
-        linear-gradient(145deg, #6240a6 0%, #9a70d2 34%, #c5a0ed 62%, #7550b8 100%);
+        radial-gradient(ellipse at 8% 18%, rgba(255,255,255,.10), transparent 24%),
+        radial-gradient(ellipse at 90% 32%, rgba(194,160,255,.16), transparent 22%),
+        radial-gradient(ellipse at 50% 80%, rgba(239,205,255,.12), transparent 35%),
+        linear-gradient(145deg, #32164f 0%, #57317f 38%, #8060a7 68%, #39204f 100%);
       min-height: 100vh;
       overflow-x: hidden;
     }
@@ -136,7 +135,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      font-family: "Quicksand", sans-serif;
+      font-family: "Cinzel", serif;
       font-size: 12px;
       font-weight: 700;
       letter-spacing: .18em;
@@ -219,6 +218,21 @@
       color: var(--lemon);
     }
 
+    .organization-intro {
+      max-width: 500px;
+      margin: 20px 0 0;
+      color: #f0e4ff;
+      font-size: 13px;
+      line-height: 1.8;
+      padding-left: 14px;
+      border-left: 2px solid #d9baff;
+    }
+
+    .organization-intro strong {
+      color: #fff1c9;
+      font-weight: 700;
+    }
+
     h1 {
       font-family: "Playfair Display", Georgia, serif;
       font-size: clamp(58px, 7.2vw, 100px);
@@ -234,14 +248,14 @@
     h1 .title-line { display: block; }
 
     h1 .dream {
-      font-family: "Quicksand", sans-serif;
+      font-family: "Playfair Display", Georgia, serif;
       font-weight: 700;
       font-size: .72em;
       letter-spacing: -.065em;
       color: #fff0a0;
       -webkit-text-stroke: .5px rgba(255,255,255,.45);
-      text-shadow: 0 3px 0 rgba(111,62,160,.12),
-                   0 0 32px rgba(255,241,138,.28);
+      text-shadow: 0 3px 0 rgba(70,33,118,.52),
+                   0 0 32px rgba(255,231,255,.48);
     }
 
     .hero-description {
@@ -343,7 +357,7 @@
       top: -9px;
       left: 22px;
       border-radius: 50%;
-      background: #9b73d3;
+      background: #72130c;
     }
 
     .dream-orb {
@@ -358,7 +372,7 @@
         radial-gradient(circle at 30% 23%, rgba(255,255,255,.9), transparent 4%),
         radial-gradient(ellipse at 60% 30%, rgba(239,205,255,.8), transparent 29%),
         radial-gradient(ellipse at 40% 70%, rgba(87,54,161,.55), transparent 40%),
-        linear-gradient(150deg, #d7b7ff 0%, #9474dc 45%, #583d9d 100%);
+        linear-gradient(150deg, #ffb27d 0%, #b62a16 45%, #3c0704 100%);
       border: 2px solid rgba(255,255,255,.58);
       box-shadow: 0 0 0 13px rgba(255,255,255,.08),
                   0 0 0 27px rgba(255,255,255,.05),
@@ -383,7 +397,7 @@
       left: -25%;
       bottom: 5%;
       border-radius: 50%;
-      background: linear-gradient(90deg, transparent, rgba(190,245,255,.35), rgba(255,231,255,.48), transparent);
+      background: linear-gradient(90deg, transparent, rgba(190,245,255,.35), rgba(255,219,157,.35), transparent);
       filter: blur(13px);
       transform: rotate(-23deg);
     }
@@ -468,9 +482,9 @@
     }
 
     h2 {
-      font-family: "Playfair Display", Georgia, serif;
+      font-family: "Cinzel", "Playfair Display", Georgia, serif;
       font-weight: 600;
-      font-size: clamp(34px, 4.5vw, 55px);
+      font-size: clamp(30px, 4.2vw, 50px);
       line-height: 1.1;
       letter-spacing: -.035em;
       margin: 14px 0;
@@ -492,7 +506,7 @@
       padding: clamp(25px, 5vw, 55px);
       border: 1px solid var(--line);
       border-radius: 30px;
-      background: linear-gradient(135deg, rgba(255,255,255,.17), rgba(255,255,255,.07));
+      background: linear-gradient(135deg, rgba(255,105,54,.14), rgba(30,3,1,.28));
       backdrop-filter: blur(16px);
       box-shadow: var(--shadow);
       position: relative;
@@ -697,7 +711,7 @@
       border: 1px solid rgba(255,255,255,.34);
       border-radius: 32px;
       background: radial-gradient(circle at 50% 0%, rgba(255,255,255,.22), transparent 45%),
-                  linear-gradient(135deg, rgba(70,33,118,.52), rgba(255,255,255,.1));
+                  linear-gradient(135deg, rgba(76,38,126,.55), rgba(255,255,255,.1));
       box-shadow: var(--shadow);
       position: relative;
       overflow: hidden;
@@ -732,6 +746,80 @@
       display: block;
       margin-bottom: 8px;
     }
+
+
+    /* INTERACTIVE LETTER */
+    .letter-trigger { cursor: pointer; border: 0; font-family: inherit; }
+    .letter-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: grid;
+      place-items: center;
+      padding: 22px;
+      background: rgba(24, 8, 43, .78);
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s ease, visibility .3s ease;
+    }
+    .letter-modal.open { opacity: 1; visibility: visible; }
+    .letter-paper {
+      width: min(650px, 100%);
+      max-height: min(82vh, 760px);
+      overflow-y: auto;
+      position: relative;
+      padding: clamp(28px, 5vw, 52px);
+      color: #39204f;
+      background: linear-gradient(145deg, #fffaff, #efe1ff);
+      border: 1px solid rgba(217, 186, 255, .9);
+      border-radius: 8px 24px 8px 24px;
+      box-shadow: 0 25px 90px rgba(0,0,0,.5);
+      transform: translateY(18px) scale(.98);
+      transition: transform .3s ease;
+    }
+    .letter-modal.open .letter-paper { transform: translateY(0) scale(1); }
+    .letter-close {
+      position: absolute;
+      top: 13px;
+      right: 17px;
+      width: 38px;
+      height: 38px;
+      border: 1px solid rgba(91, 25, 12, .22);
+      border-radius: 50%;
+      color: #4d2879;
+      background: rgba(255,255,255,.55);
+      font-size: 23px;
+      cursor: pointer;
+    }
+    .letter-label {
+      color: #8256c6;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+    .letter-paper h2 {
+      margin: 14px 0 22px;
+      color: #4c267e;
+      font-family: "Cinzel", "Playfair Display", serif;
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.2;
+    }
+    .letter-paper p {
+      color: #5d4776;
+      font-size: 14px;
+      line-height: 1.95;
+      margin: 0 0 15px;
+    }
+    .letter-signature {
+      margin-top: 25px;
+      color: #8256c6;
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 20px;
+    }
+    body.modal-open { overflow: hidden; }
 
     /* SCROLL REVEAL */
     .reveal {
@@ -831,6 +919,13 @@
         padding: 35px 0 45px;
       }
 
+      .organization-intro {
+        max-width: 500px;
+        margin: 16px 0 0;
+        font-size: 12px;
+        line-height: 1.75;
+      }
+
       h1 {
         font-size: clamp(54px, 15vw, 76px);
         margin-top: 23px;
@@ -912,7 +1007,7 @@
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Chạm giấc mơ em - về đầu trang">
       <span class="brand-mark">✦</span>
-      <span>Mini Session · The Beha-ism</span>
+      <span>Mini Session · The Behalism</span>
     </a>
 
     <nav class="nav" aria-label="Điều hướng chính">
@@ -935,6 +1030,11 @@
 
       <div class="hero-copy">
         <div class="eyebrow">Một hành trình nhỏ · Một yêu thương lớn</div>
+        <p class="organization-intro">
+          <strong>The Behalism</strong> là tổ chức phi lợi nhuận hoạt động tại
+          <strong>TP. Hồ Chí Minh, Hà Nội và Bến Tre</strong>, với sứ mệnh mang niềm vui
+          và tri thức đến với trẻ em tại các làng trẻ trên khắp Việt Nam.
+        </p>
 
         <h1>
           <span class="title-line">Chạm</span>
@@ -1055,6 +1155,15 @@
           <figcaption class="gallery-caption">Lưu giữ yêu thương ☾</figcaption>
         </figure>
 
+        <figure class="gallery-item">
+          <img
+            src="./ảnh 4.jpg"
+            alt="Khoảnh khắc thứ tư trong hành trình Chạm giấc mơ em"
+            loading="lazy"
+          >
+          <figcaption class="gallery-caption">Một mảnh ghép dịu dàng ✦</figcaption>
+        </figure>
+
       </div>
     </section>
 
@@ -1143,22 +1252,50 @@
         được lắng nghe và được mơ ước.
       </p>
 
-      <a
-        class="button button-primary"
-        href="mailto:your-email@example.com?subject=Ch%E1%BA%A1m%20gi%E1%BA%A5c%20m%C6%A1%20em"
-      >
-        Cùng lan tỏa yêu thương ♡
-      </a>
+      <button class="button button-primary letter-trigger" id="openLetter" type="button" aria-haspopup="dialog" aria-controls="messageLetter">
+        Mở lá thư yêu thương ♡
+      </button>
     </section>
 
   </main>
+
+
+  <section class="letter-modal" id="messageLetter" role="dialog" aria-modal="true" aria-labelledby="letterTitle" aria-hidden="true">
+    <article class="letter-paper">
+      <button class="letter-close" id="closeLetter" type="button" aria-label="Đóng lá thư">×</button>
+      <span class="letter-label">The Behalism · Chạm giấc mơ em</span>
+      <h2 id="letterTitle">Gửi những giấc mơ nhỏ bé</h2>
+      <p>
+        The Behalism là tổ chức phi lợi nhuận hoạt động tại Thành phố Hồ Chí Minh,
+        Hà Nội và Bến Tre. Với mong muốn mang lại niềm vui và tri thức cho trẻ em
+        tại các làng trẻ ở nhiều địa phương trên khắp Việt Nam, chúng mình tin rằng
+        mỗi sự sẻ chia đều có thể mở ra một cơ hội để các em khám phá thế giới và
+        tin hơn vào những ước mơ của mình.
+      </p>
+      <p>
+        “Chạm giấc mơ em” được thực hiện với mong muốn mang đến cho các em nhỏ tại
+        Làng trẻ em SOS Bến Tre một ngày thật nhiều tiếng cười, những trải nghiệm
+        sáng tạo và những khoảnh khắc được lắng nghe. Chúng mình không mong để lại
+        điều gì quá lớn lao; chỉ hy vọng mỗi em cảm nhận được rằng tiếng nói của mình
+        có giá trị, trí tưởng tượng của mình đáng được nuôi dưỡng và tương lai luôn
+        có chỗ cho những ước mơ.
+      </p>
+      <p>
+        Bởi đôi khi, điều một đứa trẻ cần không chỉ là một món quà, mà còn là một
+        người sẵn lòng ngồi xuống, lắng nghe và nói rằng: “Em có thể làm được”.
+        Mong rằng những điều nhỏ bé hôm nay sẽ trở thành một phần ký ức ấm áp,
+        để các em tiếp tục lớn lên với niềm vui, tri thức và niềm tin vào chính mình.
+      </p>
+      <div class="letter-signature">Với tất cả sự chân thành,<br>Chạm giấc mơ em ✦</div>
+    </article>
+  </section>
 
   <!-- FOOTER -->
   <footer>
     <span class="footer-title">Chạm giấc mơ em</span>
     Một mini session được gửi gắm bằng sự chân thành · Làng trẻ em SOS
     <br><br>
-    © <span id="year"></span> The Beha-ism. Made with care ✦
+    © 2025 The Behalism. Made with care ✦
   </footer>
 
   <script>
@@ -1180,9 +1317,35 @@
       revealItems.forEach((item) => item.classList.add("visible"));
     }
 
-    // Tự động cập nhật năm ở footer.
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+
+    // Mở/đóng lá thư cuối trang.
+    const letterModal = document.getElementById("messageLetter");
+    const openLetter = document.getElementById("openLetter");
+    const closeLetter = document.getElementById("closeLetter");
+
+    function showLetter() {
+      letterModal.classList.add("open");
+      letterModal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-open");
+      closeLetter.focus();
+    }
+
+    function hideLetter() {
+      letterModal.classList.remove("open");
+      letterModal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
+      openLetter.focus();
+    }
+
+    openLetter.addEventListener("click", showLetter);
+    closeLetter.addEventListener("click", hideLetter);
+    letterModal.addEventListener("click", (event) => {
+      if (event.target === letterModal) hideLetter();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && letterModal.classList.contains("open")) hideLetter();
+    });
+
   </script>
 
 </body>
